@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+    https://www.color-hex.com/color-palette/94776
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #353738;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.roboto-mono-navbar {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500; /* <weight>: Use a value from 100 to 700 */
+    font-style: normal;
+    font-size: large;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.roboto-mono-header {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700; /* <weight>: Use a value from 100 to 700 */
+  font-style: normal;
+  font-size: xx-large;
+  color: white;
+}
+
+.roboto-mono-text {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    color: white;
+}
+
+.roboto-mono-undertext {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    color: white;
+    margin-top: 2px;
+}
+
+.font-yellow {
+    color: #ffc500 !important;
+}
+
+.font-green {
+    color: #00c41e !important;
+}
+
+.font-red {
+    color: #ff3c36 !important;
+}
+
+#navbar {
+    margin: 5px 0px 5px 0px;
+}
