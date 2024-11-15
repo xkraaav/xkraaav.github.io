@@ -25,8 +25,75 @@
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                 </svg></a>
             </div>
-            <hr style="color: white; margin-top: 20px; margin-bottom: 20px;">
-        </div> 
-    </div>
+            <hr style="color: rgb(161, 161, 161); margin-top: 5px; margin-bottom: 20px;">
+        </div>
+        <div id="introduction">
+            <div class="row text-right" id="introduction-header">
+                <h1 class="roboto-mono-header">1. About me</h1>
+            </div>
+            <div class="row text-right" id="introduction-body">
+                <div class="col-1"></div>
+                <div class="col-9">
+                    <p class="roboto-mono-text">Hi! My name is Jan and I'm a learning full-stack developer. Currently majoring in programming in a technical college in Kraków, Poland. I started learning programming in 2019 with Godot and it's own <span style="color: rgb(66, 89, 220);">GDScript</span>. I moved on from language to language for the past 5 years, however I am currently focused on learning and advancing in <span style="color: rgb(80,187,192)">React</span> with <span class="font-yellow">JS</span>.</p>
+                </div>
+                <div class="col-2"></div>
+            </div> 
+        </div>
+        <br>
+        <div id="skills">
+            <div class="row text-right" id="skills-header">
+                <h1 class="roboto-mono-header">2. Skills</h1>
+            </div>
+            <div class="row text-right" id="skills-body">
+                <div class="col-1"></div>
+                <div class="col-9">
+                    <p class="roboto-mono-text">As I already mentioned in the <code>&lt;About me&gt;</code> section, my main focus is currently <span style="color: rgb(80,187,192)">React</span> and <span class="font-yellow">JavaScript</span>. Alongside these languages I also specialize in:</p>
+                    <!-- <ul class="text-white roboto-mono-text">
+                        <li><span class="font-red">HTML & CSS</span></li>
+                        <li><span class="font-green">SQL</span></li>
+                    </ul> -->
+                    <div class="accordion" id="accordionSkills">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" style="--hover-color: #ff3c36;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                HTML & CSS
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>

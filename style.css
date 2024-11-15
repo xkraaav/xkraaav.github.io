@@ -42,7 +42,7 @@ body {
 .roboto-mono-text {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 350;
     font-style: normal;
     font-size: medium;
     color: white;
@@ -72,4 +72,52 @@ body {
 
 #navbar {
     margin: 5px 0px 5px 0px;
+}
+
+.accordion-button {
+    background-color: #353738;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #505050;
+    color: var(--hover-color, #ffc500);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion-header {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.accordion-body {
+    background-color: #404040;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 350;
+    font-size: medium;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.accordion-button::after {
+    filter: invert(100%);
+}
+
+.accordion-button:hover {
+    background-color: #505050;
+    color: var(--hover-color, #ffc500);
 }
