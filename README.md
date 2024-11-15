@@ -1,1 +1,3 @@
-# portfolio1
+# `xkraaav` - Portfolio
+
+Personal portfolio of `xkraaav`.
