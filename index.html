@@ -12,6 +12,24 @@
 </head>
 <body>
     <div class="container">
+        <div class="container-fluid d-flex flex-column justify-content-center" style="height: 100vh;">
+            <div class="row h-100 align-items-center justify-content-center" id="mainScreen">
+                <div class="text-center text-white">
+                    <h1 class="roboto-mono-helloworld">
+                        <span id="terminalText"></span>
+                        <span class="blinking-cursor">|</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center" style="margin-top: auto; margin-bottom: 25vh;">
+                <div class="col text-center">
+                    <img src="https://avatars.githubusercontent.com/u/106249782?v=4" alt="User  avatar" class="avatar" style="margin-bottom: 10px;">
+                    <p class="roboto-mono-navbar mb-0">Jan Krawczyk</p>
+                    <p class="roboto-mono-undertext">Full-Stack Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="row align-items-center" id="navbar">
             <div class="col-1">
                 <img src="https://avatars.githubusercontent.com/u/106249782?v=4" alt="User avatar" class="avatar">
@@ -47,53 +65,87 @@
             <div class="row text-right" id="skills-body">
                 <div class="col-1"></div>
                 <div class="col-9">
-                    <p class="roboto-mono-text">As I already mentioned in the <code>&lt;About me&gt;</code> section, my main focus is currently <span style="color: rgb(80,187,192)">React</span> and <span class="font-yellow">JavaScript</span>. Alongside these languages I also specialize in:</p>
-                    <!-- <ul class="text-white roboto-mono-text">
-                        <li><span class="font-red">HTML & CSS</span></li>
-                        <li><span class="font-green">SQL</span></li>
-                    </ul> -->
+                    <p class="roboto-mono-text">As I already mentioned in the <code>&lt;About me&gt;</code> section, my main focus is currently <span style="color: rgb(80,187,192)">React</span> and <span class="font-yellow">JavaScript</span>. However I do know many other programming languages that are more or less connected to web development. <br><br> Here's a list of all my skills:</p>
                     <div class="accordion" id="accordionSkills">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" style="--hover-color: #ff8783;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                HTML & CSS
+                            <button class="accordion-button collapsed" style="--hover-color: rgb(36, 59, 174);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsOne" aria-expanded="false" aria-controls="collapseSkillsOne">
+                              Lua
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-left: 5px;" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                              </svg>
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div id="collapseSkillsOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                2+ years of experience using <strong>Lua</strong>. I learned Lua about 2,5 years ago and have been using it in smaller projects ever since. I started using Lua and implementing it with the framework <span style="color: #e8008f;">Love2D</span> and later just for writing various scripts with it. I have a <a href="https://www.udemy.com/certificate/UC-1cb4d347-2c80-40f3-80bc-b39e75509b0c/">certificate</a> proving my knowledges in Lua and Love2D.
+                                <br><br>
+                                <a href="https://www.udemy.com/certificate/UC-1cb4d347-2c80-40f3-80bc-b39e75509b0c/"><img src="img/UC-1cb4d347-2c80-40f3-80bc-b39e75509b0c.jpg" alt="Certificate - Lua" style="border-radius: 5%; width: 350px; height: auto;"></a>
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Accordion Item #2
+                            <button class="accordion-button collapsed" style="--hover-color: rgb(47, 161, 202);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsTwo" aria-expanded="false" aria-controls="collapseSkillsTwo">
+                              SQL
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-left: 5px;" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                              </svg>
                             </button>
                           </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseSkillsTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              More than a year of experience using <strong>SQL</strong>. I first started knowing SQL when I joined the technical college that I am currently attending. I picked up on it rather fast and with 3+ hours/week of practice, I am confident in my SQL skills. I have a <a href="https://www.hackerrank.com/certificates/2d1960d3bccc">certificate</a> in this language on a basic level that proves my skills.
+                              <br><br>
+                              <a href="https://www.hackerrank.com/certificates/2d1960d3bccc"><img src="img/Screenshot 2024-11-24 at 18.44.34.png" alt="Certificate - SQL (Basic)" style="border-radius: 5%; width: 350px; height: auto;"></a>
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Accordion Item #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" style="--hover-color: #ffc500;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsThree" aria-expanded="false" aria-controls="collapseSkillsThree">
+                                  React & JS
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" style="margin-left: 5px;" height="16" fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                    <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"/>
+                                  </svg>
+                              </button>
+                            </h2>
+                            <div id="collapseSkillsThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Currently learning <strong>React with JS</strong> as I previously mentioned. I don't have a certificate to prove my skills, however I am in the process of completing a crash course that will provide me with a certificate later.
+                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" style="--hover-color: #ff342d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsFour" aria-expanded="false" aria-controls="collapseSkillsFour">
+                                  HTML & CSS
+                              </button>
+                            </h2>
+                            <div id="collapseSkillsFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                3+ years of experience in <strong>HTML</strong> and <strong>CSS</strong>. I use these languages during every web project (both personal and commercial) as they're essential to any element on the internet. I currently don't own any certificates to prove my HTML/CSS skills. 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-2"></div>
             </div>
         </div>
+        <br><br>
+        <div id="projects">
+            <div class="row text-right" id="projects-header">
+                <h1 class="roboto-mono-header">Past projects</h1>
+            </div>
+            <div class="row text-right" id="projects-body">
+                
+            </div>
+        </div>
     </div> 
+
+    <script src="typing.js"></script>
+    <script src="show-navbar.js"></script>
 </body>
 </html>

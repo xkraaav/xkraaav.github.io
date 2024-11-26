@@ -37,7 +37,17 @@ body {
   font-style: normal;
   font-size: xx-large;
   color: white;
+  margin-left: 10px;
 }
+
+.roboto-mono-helloworld {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700; /* <weight>: Use a value from 100 to 700 */
+    font-style: normal;
+    font-size: 70pt;
+    color: white;
+  }
 
 .roboto-mono-text {
     font-family: "Roboto Mono", monospace;
@@ -71,8 +81,24 @@ body {
 }
 
 #navbar {
-    margin: 5px 0px 5px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #353738;
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
 }
+
+#navbar.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move it into view */
+}
+
 
 .accordion-button {
     background-color: #353738;
@@ -120,4 +146,15 @@ body {
 .accordion-button:hover {
     background-color: #505050;
     color: var(--hover-color, #ffc500);
+}
+
+.blinking-cursor {
+    animation: blink 1s step-end infinite;
+    font-size: 70pt;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
