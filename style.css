@@ -158,3 +158,51 @@ body {
         opacity: 0;
     }
 }
+
+.custom-card {
+    background-color: #404040;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Roboto Mono", monospace;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-img-top {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.card-text {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 350;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.custom-btn {
+    background-color: #ffc500;
+    color: #353738;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #e6a700;
+    transform: scale(1.1);
+    color: #353738;
+}
