@@ -1,3 +1,3 @@
 # Portfolio
 
-Personal portfolio of `xkraaav`.
+Personal portfolio of `jankrawczykk`.
